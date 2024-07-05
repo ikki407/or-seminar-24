@@ -8,12 +8,17 @@ if hit:
 else:
     st.write('I was not hit')
 
+hit_help = st.button('Help', help='This is help button!')  # ボタン（押すとTrueになる）
+if hit_help:
+    st.write('May I help you?')
+
 df = pd.DataFrame({
     'A': [1, 2, 3, 4],
     'B': [10, 20, 30, 40]
 })
 df_edit = st.data_editor(df)  # データフレームを編集
-# st.write(df_edit)  # 編集したデータベースを使いまわせる
+st.write('↓編集後のデータフレーム')
+st.write(df_edit)  # 編集したデータベースを使いまわせる
 
 st.checkbox('Check me out')  # チェックボックス
 st.radio('Pick one:', ['nose', 'ear'])  # ラジオボタン
