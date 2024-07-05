@@ -96,7 +96,7 @@ column_configuration = {
         validate="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$",
     ),
     "出勤希望": st.column_config.SelectboxColumn(
-        "出勤希望", options=["○", "×"], help="出勤希望"
+        "出勤希望", options=["○", "x"], help="出勤希望"
     ),
 }
 
