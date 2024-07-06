@@ -26,7 +26,7 @@ st.toggle('Toggle me')  # トグルボタン
 st.selectbox('Select', [1, 2, 3])  # セレクトボックス
 st.multiselect('Multiselect', [1, 2, 3])  # マルチセレクトボックス
 st.slider('Slide me', min_value=0, max_value=10)  # スライダー
-st.select_slider('Slide to select', options=[1, '2', '3', 4])  # セレクトスライダー
+start_color, end_color = st.select_slider('Slide to select', options=['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'], value=['red', 'blue'])  # セレクトスライダー
 st.text_input('Enter some text')  # テキスト入力
 st.number_input('Enter a number')  # 数値入力
 st.text_area('Area for textual entry')  # テキストエリア
